@@ -9,13 +9,16 @@
 import XCTest
 
 class RosterViewTests: XCTestCase {
-        
+
+    let app = XCUIApplication()
+
+    //set up is called before every method invocation in this class
     override func setUp() {
         super.setUp()
 
         continueAfterFailure = false
 
-        XCUIApplication().launch()
+        app.launch()
 
         UITestHelper.navigateToView(.Roster)
     }
@@ -26,7 +29,6 @@ class RosterViewTests: XCTestCase {
     
     func testAddNewPlayerToRoster() {
 
-        let app = XCUIApplication()
         let tablesQuery = app.tables
         let addPlayer = tablesQuery.textFields["Add Player"]
         let oldCount = tablesQuery.cells.count
@@ -41,26 +43,22 @@ class RosterViewTests: XCTestCase {
 
     func testRemovePlayerFromRoster() {
 
-        let app = XCUIApplication()
         let tablesQuery = app.tables
         let oldCount = tablesQuery.cells.count
-
         let rosterNavigationBar = app.navigationBars["Roster"]
+        let peytonManning = tablesQuery.textFields["Peyton Manning"]
+
         rosterNavigationBar.buttons["Edit"].tap()
         tablesQuery.buttons["Delete Peyton Manning"].tap()
         tablesQuery.buttons["Delete"].tap()
         rosterNavigationBar.buttons["Done"].tap()
 
-        let peytonManning = tablesQuery.textFields["Peyton Manning"]
-
         XCTAssert(!peytonManning.exists)
         XCTAssertEqual(tablesQuery.cells.count, oldCount - 1)
-
     }
 
     func testRenamePlayerInRoster() {
 
-        let app = XCUIApplication()
         let tablesQuery = app.tables
         let player = tablesQuery.textFields["CJ Anderson"]
 
@@ -72,16 +70,13 @@ class RosterViewTests: XCTestCase {
     }
 
     func testReorderPlayerInRoster() {
-        
-        let app = XCUIApplication()
-        let tablesQuery = app.tables
 
+        let tablesQuery = app.tables
         let rosterNavigationBar = app.navigationBars["Roster"]
         let playerCJ = tablesQuery.buttons["Reorder CJ Anderson"]
         let playerVon = tablesQuery.buttons["Reorder Von Miller"]
 
         rosterNavigationBar.buttons["Edit"].tap()
-
         playerCJ.pressForDuration(0.5, thenDragToElement: playerVon)
         rosterNavigationBar.buttons["Done"]
 
