@@ -150,7 +150,7 @@
 				FC4FC8D71C0EA47C0066A4BF /* Info.plist */,
 			);
 			path = UITestExampleUITests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		FC4FC8E31C0EA4870066A4BF /* View Contollers */ = {
 			isa = PBXGroup;

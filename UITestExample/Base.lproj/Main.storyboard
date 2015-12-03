@@ -311,7 +311,8 @@
                                                 <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NWg-7N-6x8">
                                                     <rect key="frame" x="91" y="50" width="233" height="82"/>
                                                     <animations/>
-                                                    <accessibility key="accessibilityConfiguration" identifier="Offence Picker">
+                                                    <accessibility key="accessibilityConfiguration" identifier="Offence Picker" label="Offence Picker">
+                                                        <accessibilityTraits key="traits" none="YES"/>
                                                         <bool key="isElement" value="YES"/>
                                                     </accessibility>
                                                 </pickerView>
@@ -352,7 +353,7 @@
                                                 <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRs-WH-x9M">
                                                     <rect key="frame" x="91" y="47" width="233" height="82"/>
                                                     <animations/>
-                                                    <accessibility key="accessibilityConfiguration" identifier="Defence Picker">
+                                                    <accessibility key="accessibilityConfiguration" identifier="Defence Picker" label="Defence Picker">
                                                         <bool key="isElement" value="YES"/>
                                                     </accessibility>
                                                 </pickerView>
