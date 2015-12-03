@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        SettingsManager.teamSettings.roster = Roster(players: [
+            Player(name: "CJ Anderson"),
+            Player(name: "Peyton Manning"),
+            Player(name: "Demarious Thomas"),
+            Player(name: "Von Miller")
+            ])
+
         return true
     }
 

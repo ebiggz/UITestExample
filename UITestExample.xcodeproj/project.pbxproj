@@ -8,13 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		FC4FC8B41C0EA47C0066A4BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8B31C0EA47C0066A4BF /* AppDelegate.swift */; };
-		FC4FC8B61C0EA47C0066A4BF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8B51C0EA47C0066A4BF /* FirstViewController.swift */; };
-		FC4FC8B81C0EA47C0066A4BF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8B71C0EA47C0066A4BF /* SecondViewController.swift */; };
+		FC4FC8B61C0EA47C0066A4BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8B51C0EA47C0066A4BF /* HomeViewController.swift */; };
+		FC4FC8B81C0EA47C0066A4BF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8B71C0EA47C0066A4BF /* SettingsViewController.swift */; };
 		FC4FC8BB1C0EA47C0066A4BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4FC8B91C0EA47C0066A4BF /* Main.storyboard */; };
 		FC4FC8BD1C0EA47C0066A4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4FC8BC1C0EA47C0066A4BF /* Assets.xcassets */; };
 		FC4FC8C01C0EA47C0066A4BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4FC8BE1C0EA47C0066A4BF /* LaunchScreen.storyboard */; };
 		FC4FC8CB1C0EA47C0066A4BF /* UITestExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8CA1C0EA47C0066A4BF /* UITestExampleTests.swift */; };
-		FC4FC8D61C0EA47C0066A4BF /* UITestExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8D51C0EA47C0066A4BF /* UITestExampleUITests.swift */; };
+		FC4FC8D61C0EA47C0066A4BF /* RosterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8D51C0EA47C0066A4BF /* RosterViewTests.swift */; };
+		FC4FC8E71C0F509B0066A4BF /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8E61C0F509B0066A4BF /* SettingsManager.swift */; };
+		FC4FC8EA1C0FE1300066A4BF /* Roster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8E91C0FE1300066A4BF /* Roster.swift */; };
+		FC4FC8EC1C0FE15E0066A4BF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8EB1C0FE15E0066A4BF /* Player.swift */; };
+		FC4FC8EE1C0FE8990066A4BF /* RosterPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8ED1C0FE8990066A4BF /* RosterPresenterType.swift */; };
+		FC4FC8F01C0FED8D0066A4BF /* RosterPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8EF1C0FED8D0066A4BF /* RosterPresenterDelegate.swift */; };
+		FC4FC8F21C0FF26A0066A4BF /* FullRosterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8F11C0FF26A0066A4BF /* FullRosterPresenter.swift */; };
+		FC4FC8F41C1014480066A4BF /* RosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8F31C1014480066A4BF /* RosterViewController.swift */; };
+		FC4FC8F61C10305A0066A4BF /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8F51C10305A0066A4BF /* PlayerCell.swift */; };
+		FCEB8D0D1C10CA2B00650926 /* SettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D0C1C10CA2B00650926 /* SettingsViewTests.swift */; };
+		FCEB8D0F1C10CFB900650926 /* UITestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D0E1C10CFB900650926 /* UITestHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +47,8 @@
 /* Begin PBXFileReference section */
 		FC4FC8B01C0EA47C0066A4BF /* UITestExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4FC8B31C0EA47C0066A4BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC4FC8B51C0EA47C0066A4BF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FC4FC8B71C0EA47C0066A4BF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FC4FC8B51C0EA47C0066A4BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FC4FC8B71C0EA47C0066A4BF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FC4FC8BA1C0EA47C0066A4BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC4FC8BC1C0EA47C0066A4BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC4FC8BF1C0EA47C0066A4BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,8 +57,18 @@
 		FC4FC8CA1C0EA47C0066A4BF /* UITestExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestExampleTests.swift; sourceTree = "<group>"; };
 		FC4FC8CC1C0EA47C0066A4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC4FC8D11C0EA47C0066A4BF /* UITestExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC4FC8D51C0EA47C0066A4BF /* UITestExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestExampleUITests.swift; sourceTree = "<group>"; };
+		FC4FC8D51C0EA47C0066A4BF /* RosterViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterViewTests.swift; sourceTree = "<group>"; };
 		FC4FC8D71C0EA47C0066A4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4FC8E61C0F509B0066A4BF /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		FC4FC8E91C0FE1300066A4BF /* Roster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roster.swift; sourceTree = "<group>"; };
+		FC4FC8EB1C0FE15E0066A4BF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FC4FC8ED1C0FE8990066A4BF /* RosterPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterPresenterType.swift; sourceTree = "<group>"; };
+		FC4FC8EF1C0FED8D0066A4BF /* RosterPresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterPresenterDelegate.swift; sourceTree = "<group>"; };
+		FC4FC8F11C0FF26A0066A4BF /* FullRosterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullRosterPresenter.swift; sourceTree = "<group>"; };
+		FC4FC8F31C1014480066A4BF /* RosterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterViewController.swift; sourceTree = "<group>"; };
+		FC4FC8F51C10305A0066A4BF /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		FCEB8D0C1C10CA2B00650926 /* SettingsViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewTests.swift; sourceTree = "<group>"; };
+		FCEB8D0E1C10CFB900650926 /* UITestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +120,13 @@
 			isa = PBXGroup;
 			children = (
 				FC4FC8B31C0EA47C0066A4BF /* AppDelegate.swift */,
-				FC4FC8B51C0EA47C0066A4BF /* FirstViewController.swift */,
-				FC4FC8B71C0EA47C0066A4BF /* SecondViewController.swift */,
 				FC4FC8B91C0EA47C0066A4BF /* Main.storyboard */,
-				FC4FC8BC1C0EA47C0066A4BF /* Assets.xcassets */,
 				FC4FC8BE1C0EA47C0066A4BF /* LaunchScreen.storyboard */,
+				FC4FC8E51C0F500F0066A4BF /* Views */,
+				FC4FC8E31C0EA4870066A4BF /* View Contollers */,
+				FC4FC8E41C0F50040066A4BF /* Models */,
+				FCEB8D101C10D4E200650926 /* Presenters */,
+				FC4FC8BC1C0EA47C0066A4BF /* Assets.xcassets */,
 				FC4FC8C11C0EA47C0066A4BF /* Info.plist */,
 			);
 			path = UITestExample;
@@ -122,10 +144,58 @@
 		FC4FC8D41C0EA47C0066A4BF /* UITestExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FC4FC8D51C0EA47C0066A4BF /* UITestExampleUITests.swift */,
+				FC4FC8D51C0EA47C0066A4BF /* RosterViewTests.swift */,
+				FCEB8D0C1C10CA2B00650926 /* SettingsViewTests.swift */,
+				FCEB8D0E1C10CFB900650926 /* UITestHelper.swift */,
 				FC4FC8D71C0EA47C0066A4BF /* Info.plist */,
 			);
 			path = UITestExampleUITests;
+			sourceTree = "<group>";
+		};
+		FC4FC8E31C0EA4870066A4BF /* View Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				FC4FC8B51C0EA47C0066A4BF /* HomeViewController.swift */,
+				FC4FC8B71C0EA47C0066A4BF /* SettingsViewController.swift */,
+				FC4FC8F31C1014480066A4BF /* RosterViewController.swift */,
+			);
+			name = "View Contollers";
+			sourceTree = "<group>";
+		};
+		FC4FC8E41C0F50040066A4BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC4FC8E81C0FE0540066A4BF /* Roster */,
+				FC4FC8E61C0F509B0066A4BF /* SettingsManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FC4FC8E51C0F500F0066A4BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC4FC8F51C10305A0066A4BF /* PlayerCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FC4FC8E81C0FE0540066A4BF /* Roster */ = {
+			isa = PBXGroup;
+			children = (
+				FC4FC8E91C0FE1300066A4BF /* Roster.swift */,
+				FC4FC8EB1C0FE15E0066A4BF /* Player.swift */,
+			);
+			name = Roster;
+			sourceTree = "<group>";
+		};
+		FCEB8D101C10D4E200650926 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FC4FC8EF1C0FED8D0066A4BF /* RosterPresenterDelegate.swift */,
+				FC4FC8ED1C0FE8990066A4BF /* RosterPresenterType.swift */,
+				FC4FC8F11C0FF26A0066A4BF /* FullRosterPresenter.swift */,
+			);
+			name = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +329,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC4FC8B81C0EA47C0066A4BF /* SecondViewController.swift in Sources */,
+				FC4FC8B81C0EA47C0066A4BF /* SettingsViewController.swift in Sources */,
+				FC4FC8E71C0F509B0066A4BF /* SettingsManager.swift in Sources */,
+				FC4FC8F01C0FED8D0066A4BF /* RosterPresenterDelegate.swift in Sources */,
+				FC4FC8F21C0FF26A0066A4BF /* FullRosterPresenter.swift in Sources */,
+				FC4FC8EA1C0FE1300066A4BF /* Roster.swift in Sources */,
+				FC4FC8F61C10305A0066A4BF /* PlayerCell.swift in Sources */,
+				FC4FC8F41C1014480066A4BF /* RosterViewController.swift in Sources */,
 				FC4FC8B41C0EA47C0066A4BF /* AppDelegate.swift in Sources */,
-				FC4FC8B61C0EA47C0066A4BF /* FirstViewController.swift in Sources */,
+				FC4FC8EC1C0FE15E0066A4BF /* Player.swift in Sources */,
+				FC4FC8B61C0EA47C0066A4BF /* HomeViewController.swift in Sources */,
+				FC4FC8EE1C0FE8990066A4BF /* RosterPresenterType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC4FC8D61C0EA47C0066A4BF /* UITestExampleUITests.swift in Sources */,
+				FC4FC8D61C0EA47C0066A4BF /* RosterViewTests.swift in Sources */,
+				FCEB8D0D1C10CA2B00650926 /* SettingsViewTests.swift in Sources */,
+				FCEB8D0F1C10CFB900650926 /* UITestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +566,7 @@
 				FC4FC8DC1C0EA47C0066A4BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC4FC8DD1C0EA47C0066A4BF /* Build configuration list for PBXNativeTarget "UITestExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +575,7 @@
 				FC4FC8DF1C0EA47C0066A4BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC4FC8E01C0EA47C0066A4BF /* Build configuration list for PBXNativeTarget "UITestExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +584,7 @@
 				FC4FC8E21C0EA47C0066A4BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
