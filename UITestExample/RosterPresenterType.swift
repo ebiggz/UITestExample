@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public protocol RosterPresenterType: class {
 
     weak var delegate: RosterPresenterDelegate? { get set }
@@ -21,7 +20,6 @@ public protocol RosterPresenterType: class {
 
     var isEmpty: Bool { get }
 }
-
 
 public extension RosterPresenterType {
     var isEmpty: Bool {

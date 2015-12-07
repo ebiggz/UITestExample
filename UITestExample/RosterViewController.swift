@@ -25,13 +25,10 @@ class RosterViewController: UITableViewController, RosterPresenterDelegate, UITe
         rosterPresenter.setRoster(SettingsManager.teamSettings.roster)
 
         navigationItem.rightBarButtonItem = editButtonItem()
-
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: UITableViewDataSource

@@ -25,10 +25,9 @@ public class FullRosterPresenter: NSObject, RosterPresenterType {
     }
 
     public func setRoster(newRoster: Roster) {
+        roster = newRoster
 
-            roster = newRoster
-
-            delegate?.rosterPresenterDidRefreshCompleteLayout(self)
+        delegate?.rosterPresenterDidRefreshCompleteLayout(self)
     }
 
     // MARK: Methods
@@ -36,7 +35,7 @@ public class FullRosterPresenter: NSObject, RosterPresenterType {
     public func insertPlayer(player: Player) {
         delegate?.rosterPresenterWillChangeRosterLayout(self)
 
-        unsafeAddPlayer(player)
+        internalAddPlayer(player)
 
         delegate?.rosterPresenterDidChangeRosterLayout(self)
     }
@@ -47,7 +46,7 @@ public class FullRosterPresenter: NSObject, RosterPresenterType {
         delegate?.rosterPresenterWillChangeRosterLayout(self)
 
         for player in players {
-            unsafeAddPlayer(player)
+            internalAddPlayer(player)
         }
 
         delegate?.rosterPresenterDidChangeRosterLayout(self)
@@ -111,7 +110,7 @@ public class FullRosterPresenter: NSObject, RosterPresenterType {
 
         delegate?.rosterPresenterWillChangeRosterLayout(self)
 
-        unsafeMovePlayer(player, toIndex: toIndex)
+        internalMovePlayer(player, toIndex: toIndex)
 
         delegate?.rosterPresenterDidChangeRosterLayout(self)
     }
@@ -129,9 +128,9 @@ public class FullRosterPresenter: NSObject, RosterPresenterType {
     }
 
 
-    // MARK: Internal Unsafe Updating Methods
+    // MARK: Internal Updating Methods
 
-    private func unsafeAddPlayer(player: Player) {
+    private func internalAddPlayer(player: Player) {
         precondition(!presentedPlayers.contains(player), "A player was requested to be added that is already in the roster.")
 
         roster.players.insert(player, atIndex: 0)
@@ -141,7 +140,7 @@ public class FullRosterPresenter: NSObject, RosterPresenterType {
         delegate?.rosterPresenter(self, didAddPlayer: player, atIndex: 0)
     }
 
-    private func unsafeMovePlayer(player: Player, toIndex: Int) -> Int {
+    private func internalMovePlayer(player: Player, toIndex: Int) -> Int {
         precondition(presentedPlayers.contains(player), "A list item can only be moved if it already exists in the presented list items.")
 
         let fromIndex = presentedPlayers.indexOf(player)!

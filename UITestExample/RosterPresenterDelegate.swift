@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public protocol RosterPresenterDelegate: class {
 
     func rosterPresenterDidRefreshCompleteLayout(rosterPresenter: RosterPresenterType)
