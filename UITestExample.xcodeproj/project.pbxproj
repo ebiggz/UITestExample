@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC07B4861C139EA1001F517C /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC07B4851C139EA1001F517C /* DateHelper.swift */; };
+		FC07B4881C1541FF001F517C /* GameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC07B4871C1541FF001F517C /* GameTest.swift */; };
 		FC4FC8B41C0EA47C0066A4BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8B31C0EA47C0066A4BF /* AppDelegate.swift */; };
 		FC4FC8B61C0EA47C0066A4BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8B51C0EA47C0066A4BF /* HomeViewController.swift */; };
 		FC4FC8B81C0EA47C0066A4BF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8B71C0EA47C0066A4BF /* SettingsViewController.swift */; };
@@ -23,8 +25,19 @@
 		FC4FC8F21C0FF26A0066A4BF /* FullRosterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8F11C0FF26A0066A4BF /* FullRosterPresenter.swift */; };
 		FC4FC8F41C1014480066A4BF /* RosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8F31C1014480066A4BF /* RosterViewController.swift */; };
 		FC4FC8F61C10305A0066A4BF /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC8F51C10305A0066A4BF /* PlayerCell.swift */; };
+		FCA982991C12ABDF00EF6226 /* ScheduleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA982981C12ABDF00EF6226 /* ScheduleViewTests.swift */; };
+		FCEB19A71C117A05007D842C /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB19A61C117A05007D842C /* GameCell.swift */; };
+		FCEB19A91C120227007D842C /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB19A81C120227007D842C /* NewGameViewController.swift */; };
+		FCEB19AC1C12365E007D842C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB19AB1C12365E007D842C /* StringExtension.swift */; };
 		FCEB8D0D1C10CA2B00650926 /* SettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D0C1C10CA2B00650926 /* SettingsViewTests.swift */; };
 		FCEB8D0F1C10CFB900650926 /* UITestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D0E1C10CFB900650926 /* UITestHelper.swift */; };
+		FCEB8D151C11311C00650926 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D141C11311C00650926 /* Game.swift */; };
+		FCEB8D171C11313A00650926 /* Opponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D161C11313A00650926 /* Opponent.swift */; };
+		FCEB8D191C1144A900650926 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D181C1144A900650926 /* Schedule.swift */; };
+		FCEB8D1C1C114BA700650926 /* SchedulePresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D1B1C114BA700650926 /* SchedulePresenterType.swift */; };
+		FCEB8D1E1C114C4D00650926 /* SchedulePresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D1D1C114C4D00650926 /* SchedulePresenterDelegate.swift */; };
+		FCEB8D201C11506400650926 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D1F1C11506400650926 /* ScheduleViewController.swift */; };
+		FCEB8D221C1157F100650926 /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8D211C1157F100650926 /* SchedulePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC07B4851C139EA1001F517C /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		FC07B4871C1541FF001F517C /* GameTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTest.swift; sourceTree = "<group>"; };
 		FC4FC8B01C0EA47C0066A4BF /* UITestExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4FC8B31C0EA47C0066A4BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC4FC8B51C0EA47C0066A4BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -67,8 +82,19 @@
 		FC4FC8F11C0FF26A0066A4BF /* FullRosterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullRosterPresenter.swift; sourceTree = "<group>"; };
 		FC4FC8F31C1014480066A4BF /* RosterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterViewController.swift; sourceTree = "<group>"; };
 		FC4FC8F51C10305A0066A4BF /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		FCA982981C12ABDF00EF6226 /* ScheduleViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewTests.swift; sourceTree = "<group>"; };
+		FCEB19A61C117A05007D842C /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		FCEB19A81C120227007D842C /* NewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
+		FCEB19AB1C12365E007D842C /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		FCEB8D0C1C10CA2B00650926 /* SettingsViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewTests.swift; sourceTree = "<group>"; };
 		FCEB8D0E1C10CFB900650926 /* UITestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestHelper.swift; sourceTree = "<group>"; };
+		FCEB8D141C11311C00650926 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		FCEB8D161C11313A00650926 /* Opponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Opponent.swift; sourceTree = "<group>"; };
+		FCEB8D181C1144A900650926 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		FCEB8D1B1C114BA700650926 /* SchedulePresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulePresenterType.swift; sourceTree = "<group>"; };
+		FCEB8D1D1C114C4D00650926 /* SchedulePresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulePresenterDelegate.swift; sourceTree = "<group>"; };
+		FCEB8D1F1C11506400650926 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		FCEB8D211C1157F100650926 /* SchedulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +122,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC07B4841C139E89001F517C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FC07B4871C1541FF001F517C /* GameTest.swift */,
+				FCEB8D0E1C10CFB900650926 /* UITestHelper.swift */,
+				FC07B4851C139EA1001F517C /* DateHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		FC4FC8A71C0EA47C0066A4BF = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +161,9 @@
 				FC4FC8E51C0F500F0066A4BF /* Views */,
 				FC4FC8E31C0EA4870066A4BF /* View Contollers */,
 				FC4FC8E41C0F50040066A4BF /* Models */,
+				FCEB8D111C1100BD00650926 /* Managers */,
 				FCEB8D101C10D4E200650926 /* Presenters */,
+				FCEB19AA1C1235CF007D842C /* Helpers */,
 				FC4FC8BC1C0EA47C0066A4BF /* Assets.xcassets */,
 				FC4FC8C11C0EA47C0066A4BF /* Info.plist */,
 			);
@@ -146,7 +184,8 @@
 			children = (
 				FC4FC8D51C0EA47C0066A4BF /* RosterViewTests.swift */,
 				FCEB8D0C1C10CA2B00650926 /* SettingsViewTests.swift */,
-				FCEB8D0E1C10CFB900650926 /* UITestHelper.swift */,
+				FCA982981C12ABDF00EF6226 /* ScheduleViewTests.swift */,
+				FC07B4841C139E89001F517C /* Helpers */,
 				FC4FC8D71C0EA47C0066A4BF /* Info.plist */,
 			);
 			path = UITestExampleUITests;
@@ -158,6 +197,8 @@
 				FC4FC8B51C0EA47C0066A4BF /* HomeViewController.swift */,
 				FC4FC8B71C0EA47C0066A4BF /* SettingsViewController.swift */,
 				FC4FC8F31C1014480066A4BF /* RosterViewController.swift */,
+				FCEB8D1F1C11506400650926 /* ScheduleViewController.swift */,
+				FCEB19A81C120227007D842C /* NewGameViewController.swift */,
 			);
 			name = "View Contollers";
 			sourceTree = "<group>";
@@ -165,8 +206,8 @@
 		FC4FC8E41C0F50040066A4BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FCEB8D131C11309200650926 /* Schedule */,
 				FC4FC8E81C0FE0540066A4BF /* Roster */,
-				FC4FC8E61C0F509B0066A4BF /* SettingsManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -175,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				FC4FC8F51C10305A0066A4BF /* PlayerCell.swift */,
+				FCEB19A61C117A05007D842C /* GameCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -188,14 +230,59 @@
 			name = Roster;
 			sourceTree = "<group>";
 		};
+		FCEB19AA1C1235CF007D842C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB19AB1C12365E007D842C /* StringExtension.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		FCEB8D101C10D4E200650926 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB8D1A1C1145C100650926 /* Schedule */,
+				FCEB8D121C11023200650926 /* Roster */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		FCEB8D111C1100BD00650926 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FC4FC8E61C0F509B0066A4BF /* SettingsManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		FCEB8D121C11023200650926 /* Roster */ = {
 			isa = PBXGroup;
 			children = (
 				FC4FC8EF1C0FED8D0066A4BF /* RosterPresenterDelegate.swift */,
 				FC4FC8ED1C0FE8990066A4BF /* RosterPresenterType.swift */,
 				FC4FC8F11C0FF26A0066A4BF /* FullRosterPresenter.swift */,
 			);
-			name = Presenters;
+			name = Roster;
+			sourceTree = "<group>";
+		};
+		FCEB8D131C11309200650926 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB8D141C11311C00650926 /* Game.swift */,
+				FCEB8D161C11313A00650926 /* Opponent.swift */,
+				FCEB8D181C1144A900650926 /* Schedule.swift */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		FCEB8D1A1C1145C100650926 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB8D1D1C114C4D00650926 /* SchedulePresenterDelegate.swift */,
+				FCEB8D1B1C114BA700650926 /* SchedulePresenterType.swift */,
+				FCEB8D211C1157F100650926 /* SchedulePresenter.swift */,
+			);
+			name = Schedule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,15 +417,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4FC8B81C0EA47C0066A4BF /* SettingsViewController.swift in Sources */,
+				FCEB8D221C1157F100650926 /* SchedulePresenter.swift in Sources */,
 				FC4FC8E71C0F509B0066A4BF /* SettingsManager.swift in Sources */,
+				FCEB19AC1C12365E007D842C /* StringExtension.swift in Sources */,
+				FCEB8D201C11506400650926 /* ScheduleViewController.swift in Sources */,
 				FC4FC8F01C0FED8D0066A4BF /* RosterPresenterDelegate.swift in Sources */,
+				FCEB8D1C1C114BA700650926 /* SchedulePresenterType.swift in Sources */,
 				FC4FC8F21C0FF26A0066A4BF /* FullRosterPresenter.swift in Sources */,
 				FC4FC8EA1C0FE1300066A4BF /* Roster.swift in Sources */,
 				FC4FC8F61C10305A0066A4BF /* PlayerCell.swift in Sources */,
 				FC4FC8F41C1014480066A4BF /* RosterViewController.swift in Sources */,
+				FCEB8D151C11311C00650926 /* Game.swift in Sources */,
 				FC4FC8B41C0EA47C0066A4BF /* AppDelegate.swift in Sources */,
+				FCEB8D171C11313A00650926 /* Opponent.swift in Sources */,
 				FC4FC8EC1C0FE15E0066A4BF /* Player.swift in Sources */,
 				FC4FC8B61C0EA47C0066A4BF /* HomeViewController.swift in Sources */,
+				FCEB8D1E1C114C4D00650926 /* SchedulePresenterDelegate.swift in Sources */,
+				FCEB19A71C117A05007D842C /* GameCell.swift in Sources */,
+				FCEB19A91C120227007D842C /* NewGameViewController.swift in Sources */,
+				FCEB8D191C1144A900650926 /* Schedule.swift in Sources */,
 				FC4FC8EE1C0FE8990066A4BF /* RosterPresenterType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,9 +452,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC07B4861C139EA1001F517C /* DateHelper.swift in Sources */,
 				FC4FC8D61C0EA47C0066A4BF /* RosterViewTests.swift in Sources */,
+				FCA982991C12ABDF00EF6226 /* ScheduleViewTests.swift in Sources */,
 				FCEB8D0D1C10CA2B00650926 /* SettingsViewTests.swift in Sources */,
 				FCEB8D0F1C10CFB900650926 /* UITestHelper.swift in Sources */,
+				FC07B4881C1541FF001F517C /* GameTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

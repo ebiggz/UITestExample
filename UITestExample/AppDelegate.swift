@@ -20,9 +20,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SettingsManager.teamSettings.roster = Roster(players: [
             Player(name: "CJ Anderson"),
             Player(name: "Peyton Manning"),
-            Player(name: "Demarious Thomas"),
+            Player(name: "Demaryius Thomas"),
             Player(name: "Von Miller")
             ])
+
+        SettingsManager.teamSettings.schedule =
+            Schedule(withGames: [
+                Game(againstOpponent: Opponent(withName: "Cleveland Browns"),
+                    onDateString: "9/12/2015",
+                    isAtHome: true, opponentScore: 10, teamScore: 21),
+                Game(againstOpponent: Opponent(withName: "Oakland Raiders"),
+                    onDateString: "10/3/2015",
+                    isAtHome: false, opponentScore: 28, teamScore: 25),
+                Game(againstOpponent: Opponent(withName: "Chicago Bears"),
+                    onDateString: "12/20/2015",
+                    isAtHome: false)])
 
         return true
     }
