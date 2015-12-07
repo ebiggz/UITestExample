@@ -19,9 +19,11 @@ struct TeamSettings {
     var selectedDefenceIndex = 0
     var selectedOffenceIndex = 0
     var roster = Roster()
+    var schedule = Schedule()
 }
 
 public enum Color {
+
     case Blue
     case Green
     case Yellow
@@ -66,7 +68,6 @@ public enum Defence {
         }
         return vals
     }
-
 }
 
 public enum Offence {
@@ -99,6 +100,5 @@ public enum Offence {
         }
         return vals
     }
-
 }
 
