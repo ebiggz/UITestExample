@@ -26,6 +26,7 @@ class SettingsViewTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        app.terminate()
     }
 
     func testRenameTeam() {
@@ -39,22 +40,30 @@ class SettingsViewTests: XCTestCase {
         XCTAssert(app.navigationBars["Denver Broncos"].exists)
     }
 
+    /* 
+     * Note(Erik 12/4/15): This isn't working due to possible Apple bug. 'adjustToNormalizedSliderPosition' 
+     * is non-functional. Appears to break when slider is in a TableView.
+     */
     func testUpdateTeamSkill() {
 
-        let slider = app.tables.cells.sliders.element
+        let slider = app.sliders["Skill Slider"]
+        //let sliderLabel = app.staticTexts["Skill Display Label"]
 
-        //This isnt working for some reason
-        slider.adjustToNormalizedSliderPosition(0.9)
+        slider.adjustToNormalizedSliderPosition(0.8)
+
+        //XCTAssertEqual(slider.normalizedSliderPosition, 0.8)
+        //XCTAssertEqual(sliderLabel.label, "8")
+
     }
 
-    func testPickPreferredDefence() {
+    func testPickPreferredDefense() {
         
-        let defencePicker = app.pickerWheels.elementBoundByIndex(1)
-        let defenceLabel = app.staticTexts["Selected Defence Display"]
+        let defensePicker = app.pickerWheels.elementBoundByIndex(1)
+        let defenseLabel = app.staticTexts["Selected Defense Display"]
 
-        defencePicker.adjustToPickerWheelValue("Nickel")
+        defensePicker.adjustToPickerWheelValue("Nickel")
 
-        XCTAssertEqual(defenceLabel.label, "Nickel")
+        XCTAssertEqual(defenseLabel.label, "Nickel")
     }
 
     func testPickPreferredOffence() {
