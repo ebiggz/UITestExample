@@ -25,6 +25,7 @@ class RosterViewTests: XCTestCase {
     
     override func tearDown() {
         super.tearDown()
+        app.terminate()
     }
     
     func testAddNewPlayerToRoster() {
